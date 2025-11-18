@@ -465,3 +465,189 @@
 
 //     println!("Capital of Japan is {}", capitalCities["Japan"]);
 // }
+
+// use std::collections::HashMap;
+
+// fn main(){
+//     let mut capital_cities = HashMap::new();
+//     capital_cities.insert("France", ("Paris", "PSG"));
+//     capital_cities.insert("England", ("London", "Arsenal"));
+
+//     println!("Capital of France is {}", capital_cities["France"].0);
+//     println!("Best club in England is {}", capital_cities["England"].1);
+// }
+
+// use std::collections::HashMap;
+
+// struct CityInfo<'a> {
+//     capital: &'a str,
+//     club: &'a str,
+// }
+
+// fn main(){
+//     let mut capital_cities: HashMap<&str, CityInfo> = HashMap::new();
+
+//     capital_cities.insert("France", CityInfo{ capital: "Paris", club: "PSG"});
+//     capital_cities.insert("England", CityInfo{ capital: "London", club: "Arsenal"});
+//     capital_cities.insert("Germany", CityInfo{capital: "Berlin", club:"Bayern Munich"});
+
+//     println!("Capital of France is {}", capital_cities["France"].capital);
+//     println!("Best club in England is {}", capital_cities["England"].club);
+//     println!("Clun in Germany: {}", capital_cities["Germany"].club);
+
+//     let france_info = &capital_cities["France"];
+//     println!("France Info: Capital:{}, Club: {}", france_info.capital, france_info.club);
+
+// }
+
+fn main(){
+    let mut numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    numbers[3] = 18;
+
+    // println!("The new fourth number is {}", numbers[3]);
+    // println!("This array has {} elements", numbers.len());
+
+    // for number in numbers{
+    //     println!("I am number {}", number)
+    // }
+
+    // println!("{:?}", numbers)
+
+    println!("{}", numbers[7]);
+
+}
+
+// fn main(){
+//     let fruits = ["apple", "banana", "orange"];
+//     for fruit in fruits {
+//         println!("I like {}.", fruit);
+//     }
+// }
+
+// fn main(){
+//     let mut cars = vec! ["volvo", "lexus", "BMW", "Ford"];
+
+//     cars.push("Mazda");
+
+//     println!("{}", cars[4]);
+//     println!("{:?}", cars );
+// }
+
+// fn main(){
+//     let mut fruits = vec!["apple", "banana", "orange", "mango"];
+//     fruits[0] = "grape";
+//     fruits.push("pineapple");
+//     fruits.push("Guava");
+//     fruits.pop();
+//     fruits.insert(5, "Guava");
+//     fruits.remove(3);
+
+//     println!("{:?}", fruits);
+//     println!("There are {} fruits.", fruits.len());
+
+//     for fruit in fruits {
+//         println!("I like {}.", fruit);
+//     }
+// }
+
+
+// fn main(){
+//     let person = ("Jenny", 45, false);
+//     let (name, age, active) = person;
+
+//     println!("Name: {}", name);
+//     println!("Age: {}", age);
+//     println!("Is active: {}", active);
+// }
+
+// fn get_user()->(String, i32){
+//     (String::from("Liam"), 25)
+// }
+
+// fn main(){
+//     let user = get_user();
+//     println!("User: {} ({} years old)", user.0, user.1)
+// }
+
+// use std::collections::HashMap;
+
+// fn main(){
+    
+//     let mut capital_cities = HashMap::new();
+
+//      capital_cities.insert("England", "London");
+//      capital_cities.insert("Germany", "Berlin");
+//      capital_cities.insert("Norway", "Oslo");
+//     //  capital_cities.insert("England", "Berlin");
+
+//     //  if let Some(city) = capital_cities.get("Nigeria"){
+//     //     println!("The capital of Nigeria is {}.", city);
+//     //  } else{
+//     //     
+    
+//     // capital_cities.remove("England");
+//     // println!("{:?}", capital_cities);
+
+//     for (country, city) in &capital_cities{
+//         println!("The capital of {} is {}.", country, city);
+//     }
+// }
+
+// struct Person{
+//     name: String,
+//     age: u32,
+//     can_vote: bool,
+
+// }
+// fn main(){
+//     let mut user = Person{
+//     name: String::from("John"),
+//     age:35,
+//     can_vote: true,
+// };
+// // println!("Name: {}", user.name);
+// // println!("Age: {}", user.age);
+// // println!("Can vote? {}", user.can_vote);
+
+// user.age = 36; 
+// println!("Name: {}", user.name);
+// println!("Updated age: {}", user.age);
+// println!("Can vote? {}", user.can_vote);
+
+// }
+
+// enum Direction {
+//   Up,
+//   Down,
+//   Left,
+//   Right,
+// }
+
+// fn main(){
+//       let my_direction = Direction::Left;
+
+//   match my_direction {
+//     Direction::Up => println!("Going up"),
+//     Direction::Down => println!("Going down"),
+//     Direction::Left => println!("Going left"),
+//     Direction::Right => println!("Going right"),
+//   }
+
+// }
+
+enum LoginStatus{
+    Success(String),
+    Error(String),
+}
+
+fn main(){
+    let result1= LoginStatus::Success(String::from("Welcome, John"));
+    let _result2= LoginStatus::Error(String::from("Incorrect login credentials"));
+
+    match result1{
+        LoginStatus::Success(message) => println!("success:{}", message),
+        LoginStatus::Error(message) => println!("Error:{}", message),
+    }
+}
+
+
