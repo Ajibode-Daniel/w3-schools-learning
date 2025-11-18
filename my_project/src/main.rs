@@ -285,11 +285,183 @@
 //     println!("Sum is {}", sum);
 // }
 
-fn main(){
-    fn add (a:i32, b:i32) -> i32{
-         a + b
-    }
+// fn main(){
+//     fn add (a:i32, b:i32) -> i32{
+//          a + b
+//     }
 
-    let sum = add (4,7);
-    println!("Sum is {}", sum);
-}
+//     let sum = add (4,7);
+//     println!("Sum is {}", sum);
+// }
+
+// fn main(){
+//     fn myFunction(){
+//         let message = "Hello!";
+//         println!("{}", message);
+//     }
+
+//     myFunction();
+
+//     // println!("{}", message);
+// }
+
+// fn main(){
+//     let score = 40;
+
+//     if score > 50 {
+//         let result = "Pass";
+//         println!("Result: {}", result);
+//     } else {
+//         let result = "Fail";
+//         println!("Result: {}", result);
+//     }
+    
+// }
+
+// fn main(){
+//     let score = 80;
+//     let result = if score > 50 {
+//         "Pass" // No semicolon here
+//     } else {
+//         "Fail" // No semicolon here
+//     }; // Semicolon here to end the entire let statement
+
+//     println!("Result: {}", result)
+// }
+
+// fn main(){
+//     let x = 4;
+//     {
+//         let x= 12;
+//         println!("Inside block: {}", x);
+//     }
+
+//     println!("Outside block: {}", x);
+// }
+
+// fn main(){
+//     let greeting: &str = "Hello";
+//     println!("{}", greeting);
+
+
+// }
+
+// fn main(){
+//     let text1 = "Hello World".to_string();
+//     let text2 = String::from("Hello World2");
+
+//     println!("{} & {}", text1,text2);
+// }
+
+// fn main(){
+//     let mut greeting = "Hello".to_string();
+//     greeting.push_str(" World");
+//     println!("{}", greeting);
+// }
+
+// fn main(){
+//     let mut word = "Hello".to_string();
+//     word.push('!');
+//     println!("{}", word);
+    
+// }
+
+// fn main(){
+//     let s1 = String::from("Hello");
+//     let s2 = String::from("World");
+//     let s3 = String::from("What a beautiful day!");
+
+//     let result = format!("{} {} {}", s1, s2, s3);
+
+//     println!("{}", result);
+// }
+
+// fn main(){
+//     let s1 = String::from("Hello");
+//     let s2 = String::from("World");
+//     let s3 = String::from("What a beautiful day!");
+
+//     let result = s1 + " " + &s2 + " " + &s3;
+//     println!("{}", result);
+// }
+
+// fn main(){
+//     let name = String::from("Daniel");
+//     println!("Length: {}", name.len());
+// }
+
+// fn main(){
+//     let a = String::from("Hello");
+//     let b = a;
+
+//     // println!("{}", a);
+//     println!("{}", b);
+// }
+
+// fn main(){
+//     let a = 5;
+//     let b = a;
+
+//     println!("a = {}", a);
+//     println!("b = {}", b);
+// }
+
+// fn main(){
+//     let a = String::from("Hello");
+//     let b = a.clone();
+
+//     println!("a = {}", a);
+//     println!("b = {}", b);
+// }
+
+// fn main(){
+//     let a = String::from("Hello");
+//     let b = &a;
+
+//     println!("a = {}", a);
+//     println!("b = {}", b);
+// }
+
+// fn main(){
+//     let mut name = String::from("John");
+//     let name_ref = &mut name;
+//     name_ref.push_str(" Doe");
+
+//     println!("{}", name_ref);
+// }
+
+// fn main(){
+//     let mut word = "John".to_string();
+//     word.push_str(" Doe");
+//     println!("{}", word);
+    
+// }
+
+// fn main(){
+//     let fruits = ["apple", "banana", "orange", "mango"];
+//     println!("Fav fruit: {}", fruits[2]);
+// }
+
+// fn main(){
+//     let mut fruits = vec!["apple", "banana"];
+//     fruits.push("cherry");
+    
+//     println!("Last fruit: {}", fruits[2]);
+// }
+
+// fn main(){
+//     let person = ("John", 30, true);
+//     println!("Name: {}", person.0);
+//     println!("Age: {}", person.1);
+//     println!("Is_Active: {}", person.2);
+// }
+
+// use std::collections::HashMap;
+
+// fn main(){
+//     let mut capitalCities = HashMap::new();
+//     capitalCities.insert("France", "Paris");
+//     capitalCities.insert("Japan", "Tokyo");
+
+//     println!("Capital of Japan is {}", capitalCities["Japan"]);
+// }
